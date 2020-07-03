@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="content.js"></script>
+  <style>
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: #00004d;
+    }
+  </style>
+</head>
+
+<body style="height: 200px; width: 250px">
+  <form id="form">
+    <legend>Select the sections to add to your PR description:</legend>
+    <div>
+      <input type="checkbox" name="whatDoesItDo" id="whatDoesItDo">
+      <label for="whatDoesItDo">What does it do?</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="whatElse" id="whatElse">
+      <label for="whatElse">What else do you need to know?</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="relatedTickets" id="relatedTickets">
+      <label for="relatedTickets">Related Tickets</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="testCoverage" id="testCoverage">
+      <label for="testCoverage">Test Coverage</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="communication" id="communication">
+      <label for="communication">Communication</label>
+    </div>
+
+    <div>
+      <input type="checkbox" name="screenShots" id="screenShots">
+      <label for="screenShots">Screenshots</label>
+    </div>
+
+    <button type="submit">Add the markup!</button>
+  </form>
+</body>
+
+</html>
