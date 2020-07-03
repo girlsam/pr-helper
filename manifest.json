@@ -12,7 +12,15 @@
       "js": ["content.js"]
     }
   ],
+  "permissions": ["activeTab"],
   "browser_action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_title": "Markup template for Pull Requests"
+  },
+  "icons": {
+    "16": "./icons/checklist_16.png",
+    "32": "./icons/checklist_32.png",
+    "48": "./icons/checklist_48.png",
+    "128": "./icons/checklist_128.png"
   }
 }
