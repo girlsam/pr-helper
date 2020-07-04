@@ -1,21 +1,18 @@
 {
-  "name": "Pull Request Description Helper",
+  "name": "Pull Request Template Helper",
   "version": "0.1",
-  "description": "Stages your PR with some descriptive markdown.",
+  "description": "Injects markdown template into PR descriptions.",
   "manifest_version": 2,
   "content_scripts": [
     {
-      "matches": [
-        "https://github.com/*", 
-        "http://github.com/*"
-      ],
+      "matches": ["https://github.com/*"],
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab"],
   "browser_action": {
+    "default_locale": "en",
     "default_popup": "popup.html",
-    "default_title": "Markup template for Pull Requests"
+    "default_title": "Markdown template for Pull Requests"
   },
   "icons": {
     "16": "./icons/checklist_16.png",
