@@ -1,31 +1,15 @@
-function buildMarkup() {
-  var checkedBoxes = document.querySelectorAll('input[name="markup"]:checked');
-  var markup = '';
+chrome.runtime.onMessage.addListener(function(msg, sender, response) {
+  var textarea = document.querySelector('textarea#pull_request_body');
 
-  for (var i = 0; i < checkedBoxes.length; i++) {
-    markup += markupMap[checkedBoxes[i].id] + '\n';
+  if (msg.from === 'popup' && msg.subject === 'addMarkup') {
+    if (textarea) {
+      textarea.value = msg.value;
+    } else {
+      console.error('Text area does not exist.');
+    }
+  } else {
+    console.error('Unknown message or sender.');
   }
-  
-  console.log(markup)
-  return markup;
-}
 
-function onSubmit(event) {
-  event.preventDefault();
-  buildMarkup();
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  var form = document.getElementById('form');
-
-  form.addEventListener('submit', onSubmit);
+  return;
 });
-
-var markupMap = {
-  whatDoesItDo: '### What does it do?',
-  whatElse: '### What else do you need to know?',
-  relatedTickets: '### Related Tickets',
-  testCoverage: '### Test Coverage',
-  communication: '### Communication',
-  screenShots: '### Screenshots'
-};
