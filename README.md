@@ -4,7 +4,7 @@ Pull Request templates are important, and I use them for every PR I make (profes
 This Chrome extension will inject markdown into PR descriptions. It allows you to choose the markdown sections you want to add (don't need screenshots... toggle the checkbox) and populates the PR Description field with said markdown.
 
 ### Goals with this extension
-My main goal was saving time, of course. But that's just half of it. It's been awhile since I've written vanilla JS (no `const` or `let`, no anonymous functions, no string interpolation :see_no_evil:), and even longer since I've done any DOM manipulation without JQuery. Oh, and no Sass, either. I went this route because I didn't want to bloat the package unnecessarily. 
+My main goal was saving time, of course. But that's just half of it. It's been awhile since I've written vanilla JS (no `const` or `let`, no anonymous functions, no string interpolation :see_no_evil:), and even longer since I've done any DOM manipulation without JQuery. Oh, and no Sass, either. I went this route because I didn't want to bloat the package unnecessarily, and I wanted to get back to the basics. 
 
 ### TODO
 * More error handling, esp with resolving `executeScript` promise.
