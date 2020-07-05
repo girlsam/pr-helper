@@ -8,10 +8,14 @@ My main goal was saving time, of course. But that's just half of it. It's been a
 
 With every application, no matter how small, I strive to meet accessibility standards. The extension popup is completely navigable by keyboard. Its contract ratio is over 7:1 (and so meets WCAG Level AAA benchmarks). Interactive elements (checkboxes and button) have focus indicators, as well as large clickable areas for touchscreens.
 
+### Screenshot of popup
+![](capture.png)
+
 ### TODO
 * More error handling, esp with resolving `executeScript` promise.
 * Compatibility with Bitbucket
 * This will break if Github decides to change its `textarea` id attribute so explore a more flexible identifier for the description field.
+* A few more a11y tweaks
 
 
 
