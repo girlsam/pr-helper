@@ -71,10 +71,11 @@ input {
 
 input:focus + label {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 input:focus + label::before {
-  outline: 1.5px solid var(--main-color);
+  outline: 2px solid black;
 }
 
 input + label::before {
