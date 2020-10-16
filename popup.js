@@ -15,7 +15,7 @@ function sendMessage() {
       tabs[0].id, // id of current tab
       {
         from: 'popup',
-        subject: 'addMarkup',
+        subject: 'addMarkdown',
         value: buildMarkdown()
       });
   });
