@@ -24,6 +24,7 @@ function sendMessage() {
 function onSubmit(event) {
   event.preventDefault();
   sendMessage();
+  window.close();
 }
 
 document.addEventListener('DOMContentLoaded', function() {
